@@ -46,7 +46,7 @@ Generated from: `tasks/prd-grease-monorepo-setup.md`
   - [x] 2.3 Add unit tests for common library utilities
   - [x] 2.4 Generate Tailwind CSS configuration library
   - [x] 2.5 Set up shared Tailwind config with common styles and utilities
-  - [ ] 2.6 Generate Vue shared library with components and composables
+  - [x] 2.6 Generate Vue shared library with components and composables
   - [ ] 2.7 Create sample Vue components and composables
   - [ ] 2.8 Add unit tests for Vue shared library components
 
