@@ -24,7 +24,11 @@ pnpm --version
 
 ## Repository Status
 
-This is a fresh Node.js project repository with only the Nix development environment configured. No application code, build scripts, or project structure has been established yet.
+This is a TypeScript/JavaScript monorepo for userscript development using Nx workspace management. The repository includes:
+- Nx workspace with shared libraries and userscript applications
+- Nix development environment with Node.js 20 and pnpm
+- Shared libraries for common utilities, Tailwind CSS, and Vue components
+- Example userscripts demonstrating different development patterns
 
 ## Code Quality
 
