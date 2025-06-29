@@ -34,8 +34,9 @@ Always respect .editorconfig settings when they exist in the project for consist
 
 - Use `pnpm` for all package management operations instead of `npm`
 - Use `pnpx` instead of `npx` for running packages
-- Use `pnpm nx` or `pnpx nx` for workspace management and monorepo operations (do not install nx globally)
+- Use `pnpm nx` instead of `pnpx nx` for workspace management and monorepo operations (do not install nx globally)
 - When initializing an Nx workspace, use non-interactive mode and specify pnpm as the package manager: `pnpx create-nx-workspace@latest --packageManager=pnpm --preset=<preset> --interactive=false --ci=skip`
+- When generating a @nx/js:library libraries, use vite for the bundler (`--bundler=vite`) and eslint for the linter (`--linter=eslint`)
 
 ## Development Workflow
 
