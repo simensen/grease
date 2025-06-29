@@ -1,10 +1,20 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite'
+import * as path from 'path'
 
 export default defineConfig({
-  root: __dirname,
   cacheDir: '../../node_modules/.vite/libs/common',
   plugins: [],
+  build: {
+    lib: {
+      entry: 'src/index.ts',
+      name: 'GreaseCommon',
+      fileName: 'index',
+      formats: ['es', 'cjs']
+    },
+    outDir: '../../dist/libs/common',
+    emptyOutDir: true,
+  },
   test: {
     globals: true,
     environment: 'node',
