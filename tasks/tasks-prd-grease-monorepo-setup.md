@@ -41,11 +41,11 @@ Generated from: `tasks/prd-grease-monorepo-setup.md`
   - [x] 1.7 Update .gitignore for Nx workspace patterns
 
 - [ ] 2.0 Set Up Shared Libraries (Common, Tailwind, Vue)
-  - [ ] 2.1 Generate common utilities library with Nx generator
-  - [ ] 2.2 Implement sample utility functions in common library
-  - [ ] 2.3 Add unit tests for common library utilities
-  - [ ] 2.4 Generate Tailwind CSS configuration library
-  - [ ] 2.5 Set up shared Tailwind config with common styles and utilities
+  - [x] 2.1 Generate common utilities library with Nx generator
+  - [x] 2.2 Implement sample utility functions in common library
+  - [x] 2.3 Add unit tests for common library utilities
+  - [x] 2.4 Generate Tailwind CSS configuration library
+  - [x] 2.5 Set up shared Tailwind config with common styles and utilities
   - [ ] 2.6 Generate Vue shared library with components and composables
   - [ ] 2.7 Create sample Vue components and composables
   - [ ] 2.8 Add unit tests for Vue shared library components

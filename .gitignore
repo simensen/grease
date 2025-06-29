@@ -52,3 +52,6 @@ Thumbs.db
 .nx/deps
 
 .direnv
+
+vite.config.*.timestamp*
+vitest.config.*.timestamp*

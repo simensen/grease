@@ -23,7 +23,11 @@
     "strict": true,
     "target": "es2022",
     "customConditions": ["development"],
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@grease/common": ["libs/common/src/index.ts"],
+      "@grease/tailwind-config": ["libs/tailwind-config/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
