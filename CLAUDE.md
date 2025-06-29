@@ -34,7 +34,7 @@ Always respect .editorconfig settings when they exist in the project for consist
 
 - Use `pnpm` for all package management operations instead of `npm`
 - Use `pnpx` instead of `npx` for running packages
-- Use `nx` for workspace management and monorepo operations
+- Use `pnpm nx` or `pnpx nx` for workspace management and monorepo operations (do not install nx globally)
 
 ## Development Workflow
 
