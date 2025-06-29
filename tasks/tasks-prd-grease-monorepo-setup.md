@@ -37,7 +37,7 @@ Generated from: `tasks/prd-grease-monorepo-setup.md`
   - [x] 1.3 Set up base TypeScript configuration (tsconfig.base.json)
   - [x] 1.4 Configure Nx workspace settings (nx.json) with caching and task runners
   - [x] 1.5 Set up shared ESLint configuration with TypeScript rules
-  - [ ] 1.6 Configure Prettier with workspace-wide formatting rules
+  - [x] 1.6 Configure Prettier with workspace-wide formatting rules
   - [ ] 1.7 Update .gitignore for Nx workspace patterns
 
 - [ ] 2.0 Set Up Shared Libraries (Common, Tailwind, Vue)
