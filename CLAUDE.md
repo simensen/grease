@@ -34,12 +34,35 @@ This is a TypeScript/JavaScript monorepo for userscript development using Nx wor
 
 Always respect .editorconfig settings when they exist in the project for consistent formatting across editors and contributors.
 
+### Shell Command Formatting
+
+When writing shell command examples in fenced code blocks, split long commands across multiple lines using trailing backslashes (`\`) for better readability:
+
+```bash
+# Good: Multi-line command with line continuations
+pnpm nx generate @nx/js:library example-name \
+  --bundler=vite \
+  --linter=eslint \
+  --unitTestRunner=vitest \
+  --directory=userscripts/example-name
+
+# Avoid: Single long line
+pnpm nx generate @nx/js:library example-name --bundler=vite --linter=eslint --unitTestRunner=vitest --directory=userscripts/example-name
+```
+
 ## Package Management
 
 - Use `pnpm` for all package management operations instead of `npm`
 - Use `pnpx` instead of `npx` for running packages
 - Use `pnpm nx` instead of `pnpx nx` for workspace management and monorepo operations (do not install nx globally)
-- When initializing an Nx workspace, use non-interactive mode and specify pnpm as the package manager: `pnpx create-nx-workspace@latest --packageManager=pnpm --preset=<preset> --interactive=false --ci=skip`
+- When initializing an Nx workspace, use non-interactive mode and specify pnpm as the package manager:
+  ```bash
+  pnpx create-nx-workspace@latest \
+    --packageManager=pnpm \
+    --preset=<preset> \
+    --interactive=false \
+    --ci=skip
+  ```
 - When generating a @nx/js:library libraries, use vite for the bundler (`--bundler=vite`) and eslint for the linter (`--linter=eslint`)
 
 ## Userscript Naming Convention
@@ -74,12 +97,20 @@ When creating new userscript packages, follow these guidelines:
 
 ### Generation Command
 ```bash
-pnpm nx generate @nx/js:library <userscript-name> --bundler=vite --linter=eslint --unitTestRunner=vitest --directory=userscripts/<userscript-name>
+pnpm nx generate @nx/js:library <userscript-name> \
+  --bundler=vite \
+  --linter=eslint \
+  --unitTestRunner=vitest \
+  --directory=userscripts/<userscript-name>
 ```
 
 ### Example
 ```bash
-pnpm nx generate @nx/js:library example-vue-userscript --bundler=vite --linter=eslint --unitTestRunner=vitest --directory=userscripts/example-vue-userscript
+pnpm nx generate @nx/js:library example-vue-userscript \
+  --bundler=vite \
+  --linter=eslint \
+  --unitTestRunner=vitest \
+  --directory=userscripts/example-vue-userscript
 ```
 
 ### Post-Generation Configuration
