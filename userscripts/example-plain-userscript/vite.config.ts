@@ -6,7 +6,7 @@ import { nxCopyAssetsPlugin } from "@nx/vite/plugins/nx-copy-assets.plugin"
 
 export default defineConfig(() => ({
   root: __dirname,
-  cacheDir: "../../node_modules/.vite/apps/example-plain-userscript",
+  cacheDir: "../../node_modules/.vite/userscripts/example-plain-userscript",
   plugins: [
     nxViteTsPaths(),
     nxCopyAssetsPlugin(["*.md"]),
@@ -30,7 +30,7 @@ export default defineConfig(() => ({
   // },
   // Configuration for building the userscript
   build: {
-    outDir: "../../dist/apps/example-plain-userscript",
+    outDir: "../../dist/userscripts/example-plain-userscript",
     emptyOutDir: true,
     reportCompressedSize: true,
     rollupOptions: {
@@ -44,7 +44,7 @@ export default defineConfig(() => ({
     include: ["{src,tests}/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
     reporters: ["default"],
     coverage: {
-      reportsDirectory: "../../coverage/apps/example-plain-userscript",
+      reportsDirectory: "../../coverage/userscripts/example-plain-userscript",
       provider: "v8" as const,
     },
   },

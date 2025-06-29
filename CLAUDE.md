@@ -64,18 +64,18 @@ This ensures generated files follow the pattern: `example-plain-userscript.user.
 When creating new userscript packages, follow these guidelines:
 
 ### Directory Structure
-- Generate userscript packages under the `apps/` directory (not `libs/`)
+- Generate userscript packages under the `userscripts/` directory (not `libs/`)
 - Use the same `@nx/js:library` generator used for shared libraries
 - Configure with vite bundler and eslint linter
 
 ### Generation Command
 ```bash
-pnpm nx generate @nx/js:library <userscript-name> --bundler=vite --linter=eslint --unitTestRunner=vitest --directory=apps/<userscript-name>
+pnpm nx generate @nx/js:library <userscript-name> --bundler=vite --linter=eslint --unitTestRunner=vitest --directory=userscripts/<userscript-name>
 ```
 
 ### Example
 ```bash
-pnpm nx generate @nx/js:library example-vue-userscript --bundler=vite --linter=eslint --unitTestRunner=vitest --directory=apps/example-vue-userscript
+pnpm nx generate @nx/js:library example-vue-userscript --bundler=vite --linter=eslint --unitTestRunner=vitest --directory=userscripts/example-vue-userscript
 ```
 
 ### Post-Generation Configuration
@@ -102,10 +102,10 @@ This is a TypeScript/JavaScript monorepo for userscript development using Nx wor
 - **tailwind-config**: Shared Tailwind CSS configuration and utilities
 - **vue-shared**: Vue components, composables, and utilities for userscripts
 
-### Userscript Applications (`apps/`)
+### Userscript Applications (`userscripts/`)
 - Each userscript is a standalone application that can use any combination of shared libraries
 - Built with vite-userscript-plugin to generate `.user.js` files for browser userscript managers
-- Use `pnpm nx build <userscript-name>` to generate the userscript files in `dist/apps/<userscript-name>/`
+- Use `pnpm nx build <userscript-name>` to generate the userscript files in `dist/userscripts/<userscript-name>/`
 
 ### Environment
 - The Nix flake ensures consistent Node.js 20 environment across different systems

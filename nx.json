@@ -76,7 +76,7 @@
       "bundler": "vite"
     },
     "@nx/vite:application": {
-      "directory": "apps",
+      "directory": "userscripts",
       "unitTestRunner": "vitest"
     }
   }
