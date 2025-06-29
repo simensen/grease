@@ -1,0 +1,10 @@
+{
+  "name": "example-plain-userscript",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A plain userscript example using the common library",
+  "dependencies": {
+    "@grease/common": "workspace:*"
+  }
+}

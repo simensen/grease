@@ -60,9 +60,9 @@ Generated from: `tasks/prd-grease-monorepo-setup.md`
   - [x] 2.8 Add unit tests for Vue shared library components
 
 - [ ] 3.0 Create Sample Userscript Applications
-  - [ ] 3.1 Generate example-plain-userscript app using Nx generator
-  - [ ] 3.2 Configure Vite and vite-userscript-plugin for plain userscript
-  - [ ] 3.3 Implement plain userscript using common library
+  - [x] 3.1 Generate example-plain-userscript app using Nx generator
+  - [x] 3.2 Configure Vite and vite-userscript-plugin for plain userscript
+  - [x] 3.3 Implement plain userscript using common library
   - [ ] 3.4 Generate example-vue-userscript app
   - [ ] 3.5 Configure Vue userscript with common and Vue shared libraries
   - [ ] 3.6 Generate example-tailwind-userscript app

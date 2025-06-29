@@ -27,6 +27,9 @@
     "paths": {
       "@grease/common": ["libs/common/src/index.ts"],
       "@grease/tailwind-config": ["libs/tailwind-config/src/index.ts"],
+      "example-plain-userscript": [
+        "apps/example-plain-userscript/src/index.ts"
+      ],
       "libs": ["libs/src/index.ts"],
       "vue-shared": ["libs/vue-shared/src/index.ts"]
     }
