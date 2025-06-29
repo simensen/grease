@@ -31,7 +31,7 @@ Generated from: `tasks/prd-grease-monorepo-setup.md`
 
 ## Tasks
 
-- [ ] 1.0 Initialize Nx Workspace and Core Configuration
+- [x] 1.0 Initialize Nx Workspace and Core Configuration
   - [x] 1.1 Initialize Nx workspace with TypeScript preset using pnpx (do not install nx globally)
   - [x] 1.2 Configure root package.json with workspace scripts and dependencies
   - [x] 1.3 Set up base TypeScript configuration (tsconfig.base.json)
@@ -41,7 +41,7 @@ Generated from: `tasks/prd-grease-monorepo-setup.md`
   - [x] 1.7 Update .gitignore for Nx workspace patterns
 
 - [ ] 2.0 Set Up Shared Libraries (Common, Tailwind, Vue)
-  - [ ] 2.1 Generate common utilities library with Nx generator
+  - [x] 2.1 Generate common utilities library with Nx generator
   - [ ] 2.2 Implement sample utility functions in common library
   - [ ] 2.3 Add unit tests for common library utilities
   - [ ] 2.4 Generate Tailwind CSS configuration library
