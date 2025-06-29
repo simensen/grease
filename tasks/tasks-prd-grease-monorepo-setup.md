@@ -12,7 +12,16 @@ Generated from: `tasks/prd-grease-monorepo-setup.md`
 - `libs/common/src/index.ts` - Common utilities shared library entry point
 - `libs/common/package.json` - Common library package configuration
 - `libs/tailwind-config/src/index.ts` - Tailwind CSS shared configuration
-- `libs/vue-shared/src/index.ts` - Vue components and composables library
+- `libs/vue-shared/src/index.ts` - Vue components and composables library entry point
+- `libs/vue-shared/src/lib/components/FloatingPanel.vue` - Draggable floating panel component for userscripts
+- `libs/vue-shared/src/lib/components/StatusIndicator.vue` - Status indicator component with different states
+- `libs/vue-shared/src/lib/composables/useLocalStorage.ts` - localStorage composable with reactive state
+- `libs/vue-shared/src/lib/composables/useDomObserver.ts` - DOM mutation observer composable
+- `libs/vue-shared/src/lib/composables/useUserscriptSettings.ts` - Userscript settings management composable
+- `libs/vue-shared/src/lib/vue-shared.ts` - Utility functions for Vue userscripts
+- `libs/vue-shared/src/lib/vue-shared.spec.ts` - Tests for Vue utility functions
+- `libs/vue-shared/src/lib/components/*.spec.ts` - Tests for Vue components
+- `libs/vue-shared/src/lib/composables/*.spec.ts` - Tests for Vue composables
 - `apps/example-plain-userscript/src/main.ts` - Plain userscript example
 - `apps/example-vue-userscript/src/main.ts` - Vue userscript example
 - `apps/example-tailwind-userscript/src/main.ts` - Tailwind userscript example
@@ -40,15 +49,15 @@ Generated from: `tasks/prd-grease-monorepo-setup.md`
   - [x] 1.6 Configure Prettier with workspace-wide formatting rules
   - [x] 1.7 Update .gitignore for Nx workspace patterns
 
-- [ ] 2.0 Set Up Shared Libraries (Common, Tailwind, Vue)
+- [x] 2.0 Set Up Shared Libraries (Common, Tailwind, Vue)
   - [x] 2.1 Generate common utilities library with Nx generator
   - [x] 2.2 Implement sample utility functions in common library
   - [x] 2.3 Add unit tests for common library utilities
   - [x] 2.4 Generate Tailwind CSS configuration library
   - [x] 2.5 Set up shared Tailwind config with common styles and utilities
   - [x] 2.6 Generate Vue shared library with components and composables
-  - [ ] 2.7 Create sample Vue components and composables
-  - [ ] 2.8 Add unit tests for Vue shared library components
+  - [x] 2.7 Create sample Vue components and composables
+  - [x] 2.8 Add unit tests for Vue shared library components
 
 - [ ] 3.0 Create Sample Userscript Applications
   - [ ] 3.1 Generate example-plain-userscript app using Nx generator
