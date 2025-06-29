@@ -79,6 +79,5 @@
       "directory": "apps",
       "unitTestRunner": "vitest"
     }
-  },
-  "defaultProject": "example-plain-userscript"
+  }
 }
